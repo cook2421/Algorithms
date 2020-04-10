@@ -12,12 +12,10 @@ public class BubbleSort {
                     int t = array[j];
                     array[j] = array[j+1];
                     array[j+1] = t;
-
                     count++;
                 }
             }
         }
-
         System.out.println("시행횟수: "+count);
     }
 

@@ -12,13 +12,10 @@ public class InsertionSort {
 
             for(j=i-1; j>=0 && temp<array[j]; j--){
                 array[j+1] = array[j];
-
                 count++;
             }
-
             array[j+1] = temp;
         }
-
         System.out.println("시행횟수: "+count);
     }
 

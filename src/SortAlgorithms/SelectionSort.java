@@ -13,7 +13,6 @@ public class SelectionSort {
             for(int j=i+1; j<length; j++){
                 if(array[min] > array[j]){
                     min = j;
-
                     count++;
                 }
             }
@@ -22,7 +21,6 @@ public class SelectionSort {
             array[min] = array[i];
             array[i] = temp;
         }
-
         System.out.println("시행횟수: "+count);
     }
 
