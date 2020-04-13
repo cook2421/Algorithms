@@ -21,16 +21,16 @@ public class SelectionSort {
             array[min] = array[i];
             array[i] = temp;
         }
-        System.out.println("시행횟수: "+count);
+        System.out.println("선택정렬 시행횟수: "+count);
     }
 
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int[] array = {6,5,7,4,8,2,9,10,1,3};
 
         SelectionSort selection = new SelectionSort();
 
         selection.selectionSort(array);
-    }
+    }*/
 }

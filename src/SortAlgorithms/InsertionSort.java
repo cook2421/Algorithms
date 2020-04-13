@@ -16,16 +16,16 @@ public class InsertionSort {
             }
             array[j+1] = temp;
         }
-        System.out.println("시행횟수: "+count);
+        System.out.println("삽입정렬 시행횟수: "+count);
     }
 
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int[] array = {6,5,7,4,8,2,9,10,1,3};
 
         InsertionSort insertion = new InsertionSort();
 
         insertion.insertionSort(array);
-    }
+    }*/
 }
