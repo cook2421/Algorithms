@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortAlgorithms/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortAlgorithms/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortAlgorithms/Merge_Sort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortAlgorithms/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/SortAlgorithms/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortAlgorithms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortAlgorithms/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortAlgorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortAlgorithms/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortAlgorithms/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortAlgorithms/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortAlgorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortAlgorithms/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/K번째수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/K번째수.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/K번째수.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/K번째수.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeSort">
+  <component name="RunManager" selected="Application.K번째수">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SortAlgorithms.Client" />
       <module name="Algorithm" />
@@ -88,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SortAlgorithms.InsertionSort" />
+    <configuration name="K번째수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.K번째수" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SortAlgorithms.*" />
+          <option name="PATTERN" value="Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.K번째수" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +141,9 @@
       <workItem from="1585613222559" duration="653000" />
       <workItem from="1586500701321" duration="123000" />
       <workItem from="1586503199254" duration="5950000" />
-      <workItem from="1586737104337" duration="11347000" />
+      <workItem from="1586737104337" duration="13035000" />
+      <workItem from="1586995612061" duration="599000" />
+      <workItem from="1587366614849" duration="5240000" />
     </task>
     <servers />
   </component>
@@ -170,21 +162,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SortAlgorithms/MergeSort.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SortAlgorithms/MergeSort.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
