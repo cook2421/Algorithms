@@ -21,7 +21,7 @@ public class 가장_큰_수 {
         int[] numbers14 = {0, 1000, 0, 0};
         int[] numbers15 = {121, 12};
 
-        String result = solution(numbers4);
+        String result = solution(numbers10);
 
         System.out.println(result);
     }
@@ -29,29 +29,27 @@ public class 가장_큰_수 {
 
     public static String solution(int[] numbers){
         String answer = "";
-        Map<Double, Integer> map = new HashMap<>();
-        List<Double> keyList = new ArrayList<>();
 
-        for(int n : numbers){
-            if(n < 10){
-                map.put((double)n, n);
-            } else if(n >= 10 && n < 100){
-                double key = n/10 + (double)(n%10 - n/10)/10;
-                map.put(key, n);
-            } else if(n >= 100 && n < 1000){
-                double key = n/100 + (double)(n/10%10 - n/100)/10 + (double)(n%10 - n/100)/100;
-
-                map.put(key, n);
-            } else {
-                map.put(0.5, 1000);
-            }
+        //int 배열을 String 배열로 변환
+        String[] arr = new String[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            arr[i] = (String.valueOf(numbers[i]));
         }
 
-        keyList.addAll(map.keySet());
-        Collections.sort(keyList, Collections.reverseOrder());
+        //배열 정렬, 정렬 규칙으로는 2개를 더하여 더 큰 쪽이 우선순위가 있도록 정렬
+        Arrays.sort(arr, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                return (s2+s1).compareTo(s1+s2);
+            }
+        });
 
-        for(double key : keyList){
-            answer += map.get(key);
+        //0000 처럼 0으로만 구성되어있으면 0 return
+        if (arr[0].equals("0")) return "0";
+
+        //그 외의 경우 순차적으로 연결하여 answer return
+        for (int i = 0; i < arr.length; i++) {
+            answer+=arr[i];
         }
 
         return answer;
