@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/K번째수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/K번째수.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/K번째수.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/K번째수.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +141,7 @@
       <workItem from="1586503199254" duration="5950000" />
       <workItem from="1586737104337" duration="13035000" />
       <workItem from="1586995612061" duration="599000" />
-      <workItem from="1587366614849" duration="5240000" />
+      <workItem from="1587366614849" duration="12800000" />
     </task>
     <servers />
   </component>
