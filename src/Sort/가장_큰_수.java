@@ -5,6 +5,7 @@ import java.util.*;
 
 public class 가장_큰_수 {
     public static void main(String[] args) {
+        int[] numbers0 = {3, 30, 34, 5, 9};
         int[] numbers1 = {0,0,0,0,0};
         int[] numbers2 = {40, 403};
         int[] numbers3 = {40, 405};
@@ -21,7 +22,7 @@ public class 가장_큰_수 {
         int[] numbers14 = {0, 1000, 0, 0};
         int[] numbers15 = {121, 12};
 
-        String result = solution(numbers10);
+        String result = solution(numbers0);
 
         System.out.println(result);
     }

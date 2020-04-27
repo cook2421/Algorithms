@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sort/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BruteForce/모의고사.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/가장_큰_수.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,5 +165,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/String.java</url>
+          <line>1160</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
