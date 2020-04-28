@@ -5,7 +5,7 @@ import java.util.*;
 
 public class 모의고사 {
     public static void main(String[] args) {
-        int[] answers = {1,2,3,4,5};
+        int[] answers = {1,3,2,4,2};
 
         int[] result = solution(answers);
 
@@ -14,41 +14,65 @@ public class 모의고사 {
 
 
     public static int[] solution(int[] answers){
-        int[] result = new int[3];
-        int a = 0, b = 0, c = 0;
-
+        int[] answer;
+        int[][] arr = {{1, 0}, {2, 0}, {3, 0}};
+        
         for(int i=1; i<=answers.length; i++){
-            int answer = answers[i-1];
+            int temp = answers[i-1];
+            int a = i%5, b = i%8, c = i%10;
 
-            if(i%5 == answer || (i%5 == 0 && answer == 5)) a++;
-
-            switch (answer){
-                case 1 : if(i%5 == 1) a++;
-                         if(i%8 == 2) b++;
-                         if(i%10 == 3 || i%10 == 4) c++;
+            switch (temp){
+                case 1 : if(a == 1) arr[0][1]++;
+                         if(b == 2) arr[1][1]++;
+                         if(c == 3 || c == 4) arr[2][1]++;
                          break;
-                case 2 : if(i%5 == 2) a++;
-                         if(i%2 == 1) b++;
-                         if(i%10 == 5 || i%10 == 6) c++;
+                case 2 : if(a == 2) arr[0][1]++;
+                         if(i%2 == 1) arr[1][1]++;
+                         if(c == 5 || c == 6) arr[2][1]++;
                          break;
-                case 3 : if(i%5 == 3) a++;
-                         if(i%8 == 4) b++;
-                         if(i%10 == 1 || i%10 == 2) c++;
+                case 3 : if(a == 3) arr[0][1]++;
+                         if(b == 4) arr[1][1]++;
+                         if(c == 1 || c == 2) arr[2][1]++;
                          break;
-                case 4 : if(i%5 == 4) a++;
-                         if(i%8 == 6) b++;
-                         if(i%10 == 7 || i%10 == 8) c++;
+                case 4 : if(a == 4) arr[0][1]++;
+                         if(b == 6) arr[1][1]++;
+                         if(c == 7 || c == 8) arr[2][1]++;
                          break;
-                case 5 : if(i%8 == 0) b++;
-                         if(i%10 == 9 || i%10 == 0) c++;
+                case 5 : if(a == 0) arr[0][1]++;
+                         if(b == 0) arr[1][1]++;
+                         if(c == 9 || c == 0) arr[2][1]++;
                          break;
             }
         }
 
-        Integer[] arr = {a,b,c};
-        Arrays.sort(arr, Comparator.reverseOrder());
+        Arrays.sort(arr, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[1] > o2[1]){
+                    return -1;
+                } else if(o1[1] <= o2[1]){
+                    return 1;
+                } else {
+                    return 0;
+                }
+            }
+        });
 
-        return result;
+        int count = 0;
+        for(int[] i : arr){
+            if(i[1] != 0){
+                count++;
+            }
+        }
+
+        answer = new int[count];
+
+        for(int i=0; i<count; i++){
+            answer[i] = arr[i][0];
+        }
+
+
+        return answer;
     }
 }
 

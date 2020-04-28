@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/가장_큰_수.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BruteForce/모의고사.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce/모의고사.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,6 +143,7 @@
       <workItem from="1586995612061" duration="599000" />
       <workItem from="1587687046279" duration="593000" />
       <workItem from="1587965174728" duration="970000" />
+      <workItem from="1588032488183" duration="2028000" />
     </task>
     <servers />
   </component>
