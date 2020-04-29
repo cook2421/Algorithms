@@ -5,90 +5,37 @@ import java.util.*;
 
 public class 모의고사 {
     public static void main(String[] args) {
-        int[] answers = {1,3,2,4,2};
+        int[] answers = {1,3,2,5,4,2,3,1,4,2,4,5,3,2,4,1,4,3,5,5,5,2,1,3,3,3};
 
         int[] result = solution(answers);
 
-        System.out.println(result.toString());
+        System.out.println(Arrays.toString(result));
     }
 
 
     public static int[] solution(int[] answers){
-        int[] answer;
-        int[][] arr = {{1, 0}, {2, 0}, {3, 0}};
-        
-        for(int i=1; i<=answers.length; i++){
-            int temp = answers[i-1];
-            int a = i%5, b = i%8, c = i%10;
 
-            switch (temp){
-                case 1 : if(a == 1) arr[0][1]++;
-                         if(b == 2) arr[1][1]++;
-                         if(c == 3 || c == 4) arr[2][1]++;
-                         break;
-                case 2 : if(a == 2) arr[0][1]++;
-                         if(i%2 == 1) arr[1][1]++;
-                         if(c == 5 || c == 6) arr[2][1]++;
-                         break;
-                case 3 : if(a == 3) arr[0][1]++;
-                         if(b == 4) arr[1][1]++;
-                         if(c == 1 || c == 2) arr[2][1]++;
-                         break;
-                case 4 : if(a == 4) arr[0][1]++;
-                         if(b == 6) arr[1][1]++;
-                         if(c == 7 || c == 8) arr[2][1]++;
-                         break;
-                case 5 : if(a == 0) arr[0][1]++;
-                         if(b == 0) arr[1][1]++;
-                         if(c == 9 || c == 0) arr[2][1]++;
-                         break;
-            }
+        int[] supoja1 = {1,2,3,4,5};
+        int[] supoja2 = {2,1,2,3,2,4,2,5};
+        int[] supoja3 = {3,3,1,1,2,2,4,4,5,5};
+
+        List<Integer> list = new ArrayList<>();
+        for(int i=0; i<3; i++) list.add(0);
+
+        for(int i=0; i<answers.length; i++){
+            if(answers[i] == supoja1[i%5]) list.set(0, list.get(0)+1);
+            if(answers[i] == supoja2[i%8]) list.set(1, list.get(1)+1);
+            if(answers[i] == supoja3[i%10]) list.set(2, list.get(2)+1);
         }
 
-        Arrays.sort(arr, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                if(o1[1] > o2[1]){
-                    return -1;
-                } else if(o1[1] <= o2[1]){
-                    return 1;
-                } else {
-                    return 0;
-                }
-            }
-        });
+        int max = Collections.max(list);
 
-        int count = 0;
-        for(int[] i : arr){
-            if(i[1] != 0){
-                count++;
-            }
-        }
+        List<Integer> returnList = new ArrayList<>();
+        for(int i=0; i<list.size(); i++) if(max == list.get(i)) returnList.add(i+1);
 
-        answer = new int[count];
-
-        for(int i=0; i<count; i++){
-            answer[i] = arr[i][0];
-        }
-
+        int[] answer = new int[returnList.size()];
+        for(int i=0; i<returnList.size(); i++) answer[i] = returnList.get(i);
 
         return answer;
     }
 }
-
-/*
-
-        선택지	   1	2	3	4	5
-
-        수포자1 : 1   2   3   4   5
-
-        2,1,2,3,2,4,2,5, 2,1,2,3,2,4,2,5, 2,1,2,3,2,4,2,5
-        수포자2 : 2,10,18  1,3,5,7,9  4,12,20  6,14,22  8,16,24
-
-        3,3,1,1,2,2,4,4,5,5, 3,3,1,1,2,2,4,4,5,5, 3,3,1,1,2,2,4,4,5,5
-        수포자3 : 3,4,13,14,23,24
-        5,6,15,16,25,26
-        1,2,11,12,21,22
-        7,8,17,18,27,28
-        9,10,19,20,29,30
-*/
