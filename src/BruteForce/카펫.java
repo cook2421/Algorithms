@@ -38,3 +38,17 @@ public class 카펫 {
         return answer;
     }
 }
+
+
+/*
+
+<다른 사람 답변>
+
+for(int i=1; i<=red; i++) {
+    if(red%i==0 && (red/i+i)*2+4==brown) {
+        return new int[] {red/i+2, i+2};
+    }
+}
+return null;
+
+*/
