@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sort/H_Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/모의고사$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/모의고사.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/모의고사.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BruteForce/모의고사.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce/모의고사.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +155,7 @@
       <workItem from="1587687046279" duration="593000" />
       <workItem from="1587965174728" duration="970000" />
       <workItem from="1588032488183" duration="2068000" />
-      <workItem from="1588060055607" duration="9800000" />
+      <workItem from="1588060055607" duration="10350000" />
     </task>
     <servers />
   </component>
