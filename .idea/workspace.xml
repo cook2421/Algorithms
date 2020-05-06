@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="" />
+    <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteForce/카펫.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce/카펫.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="K번째수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sort.K번째수" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -100,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sort.Main" />
+    <configuration name="카펫" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BruteForce.카펫" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sort.*" />
+          <option name="PATTERN" value="BruteForce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,7 +135,6 @@
         <item itemvalue="Application.모의고사" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.가장_큰_수" />
-        <item itemvalue="Application.K번째수" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +157,9 @@
       <workItem from="1587687046279" duration="593000" />
       <workItem from="1587965174728" duration="970000" />
       <workItem from="1588032488183" duration="2068000" />
-      <workItem from="1588060055607" duration="10350000" />
+      <workItem from="1588060055607" duration="9800000" />
+      <workItem from="1588586539058" duration="4882000" />
+      <workItem from="1588680698874" duration="1465000" />
     </task>
     <servers />
   </component>
