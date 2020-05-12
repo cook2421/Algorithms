@@ -16,8 +16,9 @@ public class H_Index {
         int[] citations6 = {5,5,5,5};
         int[] citations7 = {42,22,0};
         int[] citations8 = {10, 100};
+        int[] citations9 = {7,6,4,1,1,0};
 
-        int result = solution(citations);
+        int result = solution(citations9);
 
         System.out.println(result);
     }
@@ -36,8 +37,10 @@ public class H_Index {
         Arrays.sort(temp, Collections.reverseOrder());
 
         for(int i=0; i<temp.length; i++){
-            if(temp.length >= sum/temp.length && temp[i] <= i+1){
+            if(temp.length >= sum/temp.length && temp[i] == i+1) {
                 return temp[i];
+            } else if(temp.length >= sum/temp.length && temp[i] < i+1) {
+                return i;
             } else if(temp.length < sum/temp.length && temp[i] < temp.length){
                 return i;
             } else if(temp.length < sum/temp.length && temp[temp.length-1] > temp.length){
