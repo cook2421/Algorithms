@@ -1,4 +1,4 @@
-package BruteForce;
+package BruteForce_ExhaustiveSearch;
 // https://programmers.co.kr/learn/courses/30/lessons/42842?language=java
 
 import java.util.ArrayList;

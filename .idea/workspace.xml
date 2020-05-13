@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Hash/완주하지_못한_선수.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BruteForce/소수_찾기.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce/소수_찾기.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/모의고사.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/소수_찾기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/BruteForce/카펫.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Exhaustive_Search/모든순열_10974.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Sort/H_Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Sort/H_Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteForce/모의고사.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce_ExhaustiveSearch/모의고사.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteForce/소수_찾기.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce_ExhaustiveSearch/소수_찾기.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteForce/카펫.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce_ExhaustiveSearch/카펫.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exhaustive_Search/모든순열_10974.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteForce_ExhaustiveSearch/모든순열_10974.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/H_Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/H_Index.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +74,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.완주하지_못한_선수">
     <configuration name="모의고사" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BruteForce.모의고사" />
+      <option name="MAIN_CLASS_NAME" value="BruteForce_ExhaustiveSearch.모의고사" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BruteForce.*" />
+          <option name="PATTERN" value="BruteForce_ExhaustiveSearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BruteForce.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BruteForce.*" />
+          <option name="PATTERN" value="Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sort.Main" />
+      <option name="MAIN_CLASS_NAME" value="BruteForce.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sort.*" />
+          <option name="PATTERN" value="BruteForce_ExhaustiveSearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="가장_큰_수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sort.가장_큰_수" />
+    <configuration name="완주하지_못한_선수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hash.완주하지_못한_선수" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sort.*" />
+          <option name="PATTERN" value="Hash.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.완주하지_못한_선수" />
         <item itemvalue="Application.H_Index" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.모의고사" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.가장_큰_수" />
       </list>
     </recent_temporary>
   </component>
@@ -173,9 +184,6 @@
       <workItem from="1588032488183" duration="2068000" />
       <workItem from="1588060055607" duration="9800000" />
       <workItem from="1588586539058" duration="4882000" />
-      <workItem from="1588680698874" duration="1465000" />
-      <workItem from="1588818020516" duration="2642000" />
-      <workItem from="1588926842947" duration="945000" />
     </task>
     <servers />
   </component>
@@ -194,16 +202,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/String.java</url>
-          <line>1160</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
