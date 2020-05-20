@@ -17,15 +17,26 @@ public class 완주하지_못한_선수 {
     public static String solution(String[] participant, String[] completion){
         String answer = "";
 
-        Arrays.sort(participant);
-        Arrays.sort(completion);
+        Map<String, Integer> participants = new HashMap<>();
 
-        for(int i=0; i<completion.length; i++){
-            if(participant[i] != completion[i]){
-                answer = participant[i];
-                break;
+        for(int i=0; i<participant.length; i++){
+            if(participants.get(participant[i]) != null){
+                participants.put(participant[i], participants.get(participant[i])+1);
+            } else {
+                participants.put(participant[i], 1);
             }
         }
+
+        for(int i=0; i<completion.length; i++){
+            if(participants.get(completion[i]) > 1){
+                participants.put(completion[i], participants.get(completion[i])-1);
+            } else {
+                participants.remove(completion[i]);
+            }
+        }
+
+        Iterator<String> key = participants.keySet().iterator();
+        answer = key.next();
 
         return answer;
     }
