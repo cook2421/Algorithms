@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Array/Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Hash/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hash/전화번호_목록.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/LinkedList/SimpleLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Hash/완주하지_못한_선수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Hash/완주하지_못한_선수.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hash/완주하지_못한_선수.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hash/완주하지_못한_선수.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Array">
+  <component name="RunManager" selected="Application.SimpleLinkedList">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructure.Array.Array" />
       <module name="Algorithm" />
@@ -99,11 +95,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructure.Main" />
+      <option name="MAIN_CLASS_NAME" value="BruteForce.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructure.Tree.*" />
+          <option name="PATTERN" value="BruteForce_ExhaustiveSearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BruteForce.Main" />
+    <configuration name="SimpleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructure.LinkedList.SimpleLinkedList" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BruteForce_ExhaustiveSearch.*" />
+          <option name="PATTERN" value="DataStructure.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleLinkedList" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.전화번호_목록" />
         <item itemvalue="Application.완주하지_못한_선수" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +179,7 @@
       <workItem from="1588586539058" duration="4882000" />
       <workItem from="1589768475434" duration="87000" />
       <workItem from="1589769113245" duration="17297000" />
-      <workItem from="1589936826881" duration="9119000" />
+      <workItem from="1589936826881" duration="12602000" />
     </task>
     <servers />
   </component>
