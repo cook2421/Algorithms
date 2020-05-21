@@ -1,11 +1,18 @@
 package DataStructure.LinkedList;
 
-import com.sun.xml.internal.ws.util.xml.CDATA;
+public class DoubleEndedLinkedList {
 
-public class SimpleLinkedList {
+    private class Header {
+        private Node nextNode;
+        private Node lastNode;
 
-    // 단순 연결 리스트
-    private class Node{
+        Header(){
+            nextNode = null;
+            lastNode = null;
+        }
+    }
+
+    private class Node {
         private Object data;
         private Node nextNode;
 
@@ -16,23 +23,29 @@ public class SimpleLinkedList {
     }
 
 
-    private Node header;
+    private Header header;
     private int size;
 
 
-    public SimpleLinkedList(){
-        header = new Node(null);
+    public DoubleEndedLinkedList(){
+        header = new Header();
         size = 0;
     }
 
 
-    // index 위치의 노드 데이터를 반환한다.
+    // index번째 노드의 데이터를 반환한다.
     public Object get(int index){
         return getNode(index).data;
     }
 
 
-    // index 위치의 노드를 반환한다.
+    // 첫번째 노드의 데이터를 반환한다.
+    public Object getFirst(){
+        return get(0);
+    }
+
+
+    // index번째의 노드를 반환한다.
     private Node getNode(int index){
         if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Index : "+index+", Size : "+size);
@@ -45,12 +58,6 @@ public class SimpleLinkedList {
         }
 
         return node;
-    }
-
-
-    // 첫번째 노드의 데이터를 반환한다.
-    public Object getFirst(){
-        return get(0);
     }
 
 
@@ -73,6 +80,7 @@ public class SimpleLinkedList {
             }
 
             nodeData = node.data;
+
             index++;
         }
 
@@ -80,49 +88,68 @@ public class SimpleLinkedList {
     }
 
 
-    // data를 리스트의 첫번째에 삽입한다.
+    // 리스트의 첫번째에 data를 삽입한다.
     public void addFirst(Object data){
         Node newNode = new Node(data);
         newNode.nextNode = header.nextNode;
         header.nextNode = newNode;
         size++;
-    }
 
-
-    // index 위치에 data를 삽입한다.
-    public void add(int index, Object data){
-        if(index == 0){
-            addFirst(data);
-            return;
+        if(newNode.nextNode == null){
+            header.lastNode = newNode;
         }
-
-        Node previous = getNode(index - 1);
-        Node next = previous.nextNode;
-
-        Node newNode = new Node(data);
-        previous.nextNode = newNode;
-        newNode.nextNode = next;
-        size++;
     }
 
 
     // 리스트의 마지막에 data를 삽입한다.
     public void addLast(Object data){
-        add(size, data);
+        if(header.lastNode == null){
+            addFirst(data);
+        } else {
+            Node newNode = new Node(data);
+            header.lastNode.nextNode = newNode;
+            header.lastNode = newNode;
+            size++;
+        }
     }
 
 
-    // 리스트의 마지막에 data를 삽입한다.
+    // index의 위치에 data를 삽입한다.
+    public void add(int index, Object data){
+        if(index == 0){
+            addFirst(data);
+            return;
+        } else if(index == size){
+            addLast(data);
+        } else {
+            Node previous = getNode(index-1);
+            Node next = previous.nextNode;
+            Node newNode = new Node(data);
+            previous.nextNode = newNode;
+            newNode.nextNode = next;
+            size++;
+        }
+    }
+
+
+    // data를 리스트의 마지막에 삽입한다.
     public void add(Object data){
         addLast(data);
     }
 
 
-    // 첫번째 노드를 제거하고 데이터를 반환한다.
+    // 리스트의 첫번째 노드를 제거하고 데이터를 반환한다.
     public Object removeFirst(){
         Node firstNode = getNode(0);
         header.nextNode = firstNode.nextNode;
         size--;
+
+        // 헤더의 다음 노드가 null이면, 리스트가 비어있다.
+        // lastNode도 null로 변경
+        if(header.nextNode == null){
+            header.lastNode = null;
+        }
+
         return firstNode.data;
     }
 
@@ -141,11 +168,15 @@ public class SimpleLinkedList {
         previous.nextNode = next;
         size--;
 
+        if(previous.nextNode == null){
+            header.lastNode = previous;
+        }
+
         return removeNode.data;
     }
 
 
-    // 리스트에서 data를 가진 노드를 제거하고 제거여부를 반환한다.
+    // data가 있는 노드를 제거한다.
     public boolean remove(Object data){
         int nodeIndex = getNodeIndex(data);
 
@@ -197,10 +228,9 @@ public class SimpleLinkedList {
 
 
 
-    // test
     public static void main(String[] args){
 
-        SimpleLinkedList list = new SimpleLinkedList();
+        DoubleEndedLinkedList list = new DoubleEndedLinkedList();
 
         list.add(100);
         list.add(200);
