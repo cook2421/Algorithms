@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/LinkedList/DoubleEndedLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/LinkedList/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Stack/ListStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructure/LinkedList/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructure/LinkedList/SimpleLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -39,7 +42,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tricycleBO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tricycle/version/api-product" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -68,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DoubleEndedLinkedList">
+  <component name="RunManager" selected="Application.ListStack">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructure.Array.Array" />
       <module name="Algorithm" />
@@ -82,12 +85,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrayStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructure.Stack.ArrayStack" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructure.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoubleEndedLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructure.LinkedList.DoubleEndedLinkedList" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DataStructure.LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructure.Stack.ListStack" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructure.Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,39 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="전화번호_목록" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hash.전화번호_목록" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Hash.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="완주하지_못한_선수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hash.완주하지_못한_선수" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Hash.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListStack" />
+        <item itemvalue="Application.ArrayStack" />
         <item itemvalue="Application.DoubleEndedLinkedList" />
         <item itemvalue="Application.SimpleLinkedList" />
         <item itemvalue="Application.Array" />
-        <item itemvalue="Application.전화번호_목록" />
-        <item itemvalue="Application.완주하지_못한_선수" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +183,7 @@
       <workItem from="1588586539058" duration="4882000" />
       <workItem from="1589768475434" duration="87000" />
       <workItem from="1589769113245" duration="17297000" />
-      <workItem from="1589936826881" duration="18544000" />
+      <workItem from="1589936826881" duration="31722000" />
     </task>
     <servers />
   </component>
