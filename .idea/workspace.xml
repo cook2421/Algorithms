@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa5f1b-6025-44dd-bdfa-d6574b228503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/LinkedList/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Queue/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Stack/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Stack/ListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Queue/CircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Queue/ListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/Queue/PriorityQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +41,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tricycle/version/api-product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scm_openapi" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -71,13 +70,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ListStack">
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructure.Array.Array" />
+  <component name="RunManager" selected="Application.ArrayQueue">
+    <configuration name="ArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructure.Queue.ArrayQueue" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructure.Array.*" />
+          <option name="PATTERN" value="DataStructure.Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,19 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BruteForce.Main" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BruteForce_ExhaustiveSearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SimpleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructure.LinkedList.SimpleLinkedList" />
       <module name="Algorithm" />
@@ -152,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayQueue" />
         <item itemvalue="Application.ListStack" />
         <item itemvalue="Application.ArrayStack" />
         <item itemvalue="Application.DoubleEndedLinkedList" />
         <item itemvalue="Application.SimpleLinkedList" />
-        <item itemvalue="Application.Array" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +169,9 @@
       <workItem from="1588586539058" duration="4882000" />
       <workItem from="1589768475434" duration="87000" />
       <workItem from="1589769113245" duration="17297000" />
-      <workItem from="1589936826881" duration="31722000" />
+      <workItem from="1589936826881" duration="31820000" />
+      <workItem from="1590367227908" duration="3743000" />
+      <workItem from="1590453194469" duration="2507000" />
     </task>
     <servers />
   </component>
