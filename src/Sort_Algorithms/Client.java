@@ -1,4 +1,4 @@
-package SortAlgorithms;
+package Sort_Algorithms;
 
 public class Client {
     public static void main(String[] args) {

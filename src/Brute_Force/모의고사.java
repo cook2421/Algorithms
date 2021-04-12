@@ -1,11 +1,11 @@
-package BruteForce;
+package Brute_Force;
 // https://programmers.co.kr/learn/courses/30/lessons/42840?language=java
 
 import java.util.*;
 
 public class 모의고사 {
     public static void main(String[] args) {
-        int[] answers = {1,2,3,4,5};
+        int[] answers = {1,3,2,4,2};
 
         int[] result = solution(answers);
 
@@ -19,8 +19,6 @@ public class 모의고사 {
 
         for(int i=1; i<=answers.length; i++){
             int answer = answers[i-1];
-
-            if(i%5 == answer || (i%5 == 0 && answer == 5)) a++;
 
             switch (answer){
                 case 1 : if(i%5 == 1) a++;
@@ -39,14 +37,16 @@ public class 모의고사 {
                          if(i%8 == 6) b++;
                          if(i%10 == 7 || i%10 == 8) c++;
                          break;
-                case 5 : if(i%8 == 0) b++;
+                case 5 : if(i%5 == 0) a++;
+                         if(i%8 == 0) b++;
                          if(i%10 == 9 || i%10 == 0) c++;
                          break;
             }
         }
 
-        Integer[] arr = {a,b,c};
-        Arrays.sort(arr, Comparator.reverseOrder());
+        int[] temp = {a,b,c};
+
+
 
         return result;
     }
