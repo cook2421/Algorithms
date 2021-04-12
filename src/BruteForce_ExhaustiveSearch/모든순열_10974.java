@@ -1,4 +1,4 @@
-package Exhaustive_Search;
+package BruteForce_ExhaustiveSearch;
 
 import java.util.Scanner;
 
