@@ -1,11 +1,11 @@
-package Hash;
+package Programmers.Hash;
 // https://programmers.co.kr/learn/courses/30/lessons/42578?language=java
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class 위장 {
+public class C_위장 {
     public static void main(String[] args) {
         String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
         int result = solution(clothes);

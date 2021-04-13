@@ -1,9 +1,9 @@
-package Hash;
+package Programmers.Hash;
 //https://programmers.co.kr/learn/courses/30/lessons/42576?language=java
 
 import java.util.*;
 
-public class 완주하지_못한_선수 {
+public class A_완주하지_못한_선수 {
     public static void main(String[] args) {
         String[] participant = {"mislav", "stanko", "mislav", "ana"};
         String[] completion = {"stanko", "ana", "mislav"};

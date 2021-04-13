@@ -1,11 +1,21 @@
+package Programmers.Stack_Queue;
+// https://programmers.co.kr/learn/courses/30/lessons/42586?language=java
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Exercise {
+public class C_기능개발 {
     public static void main(String[] args) {
+        int[] progresses = {95, 90, 99, 99, 80, 99};
+        int[] speeds = {1, 1, 1, 1, 1, 1};
 
-        int[] progresses = {93, 30, 55};
-        int[] speeds = {1, 30, 5};
+        int[] result = solution(progresses, speeds);
+        for(int i : result) {
+            System.out.println(i);
+        }
+    }
+
+    public static int[] solution(int[] progresses, int[] speeds) {
 
         int[] answer = {};
 
@@ -16,14 +26,17 @@ public class Exercise {
             days.add((int)Math.ceil((100 - progresses[i]) / speeds[i]));
         }
 
+        int res = 1;
         int workingDay = (int)days.poll();
         while(!days.isEmpty()){
-            int res = 1;
             if(workingDay > (int)days.peek()){
                 res++;
+            } else {
+                workingDay = (int)days.peek();
+                res = 1;
+                result.add(res);
             }
             days.poll();
-            result.add(res);
         }
 
         answer = new int[result.size()];
@@ -33,9 +46,6 @@ public class Exercise {
             idx++;
         }
 
-        for(Integer i : answer){
-            System.out.println(i);
-        }
+        return answer;
     }
 }
-

@@ -1,11 +1,9 @@
-package Hash;
+package Programmers.Hash;
 //https://programmers.co.kr/learn/courses/30/lessons/42577?language=java
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
-public class 전화번호_목록 {
+public class B_전화번호_목록 {
     public static void main(String[] args) {
         String[] phone_book = {"119", "97674223", "1195524421"};
         boolean result = solution(phone_book);
