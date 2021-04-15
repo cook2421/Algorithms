@@ -23,7 +23,7 @@ public class BackTracking {
     // 사용 예시 : combination(arr, visited, 0, n, r)
     static void combination(int[] arr, boolean[] visited, int start, int n, int r){
         if(r == 0){
-            Print.print(arr, visited, n);
+            print(arr, visited, n);
             return;
         }
 
@@ -32,5 +32,15 @@ public class BackTracking {
             combination(arr, visited, i+1, n, r-1);
             visited[i] = false;
         }
+    }
+
+
+    // 배열 출력
+    static void print(int[] arr, boolean[] visited, int n) {
+        for (int i = 0; i < n; i++) {
+            if (visited[i] == true)
+                System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 }

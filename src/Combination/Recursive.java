@@ -23,7 +23,7 @@ public class Recursive {
     // 사용 예시 : combination(arr, visited, 0, n, r)
     static void combination(int[] arr, boolean[] visited, int depth, int n, int r){
         if(r == 0){
-            Print.print(arr, visited, n);
+            print(arr, visited, n);
             return;
         }
 
@@ -36,5 +36,15 @@ public class Recursive {
             visited[depth] = false;
             combination(arr, visited, depth+1, n, r);
         }
+    }
+
+
+    // 배열 출력
+    static void print(int[] arr, boolean[] visited, int n) {
+        for (int i = 0; i < n; i++) {
+            if (visited[i] == true)
+                System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 }
