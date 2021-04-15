@@ -1,4 +1,4 @@
-package Sort_Algorithms;
+package Sort;
 
 public class InsertionSort {
     public void insertionSort(int[] array){

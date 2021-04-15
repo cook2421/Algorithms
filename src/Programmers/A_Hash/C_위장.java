@@ -1,4 +1,4 @@
-package Programmers.C_Hash;
+package Programmers.A_Hash;
 // https://programmers.co.kr/learn/courses/30/lessons/42578?language=java
 
 import java.util.HashMap;

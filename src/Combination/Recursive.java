@@ -1,11 +1,11 @@
 package Combination;
 
 /*
- * arr : 조합을 뽑아낼 배열
- * output : 조합에 뽑혔는지 체크하는 배열
- * n : 배열의 길이
- * r : 조합의 길이
- * */
+* arr : 조합을 뽑아낼 배열
+* output : 조합에 뽑혔는지 체크하는 배열
+* n : 배열의 길이
+* r : 조합의 길이
+* */
 
 public class Recursive {
     public static void main(String[] args) {

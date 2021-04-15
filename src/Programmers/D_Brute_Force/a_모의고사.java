@@ -1,4 +1,4 @@
-package Programmers.A_Brute_Force;
+package Programmers.D_Brute_Force;
 // https://programmers.co.kr/learn/courses/30/lessons/42840?language=java
 
 import java.util.ArrayList;
