@@ -5,7 +5,6 @@ public class A_SelectionSort {
         int length = array.length;
         int min;
         int temp;
-        int count = 0;
 
         for(int i=0; i<length-1; i++){  // 마지막 요소는 자연스럽게 정렬됨
             min = i;
@@ -13,7 +12,6 @@ public class A_SelectionSort {
             for(int j=i+1; j<length; j++){
                 if(array[min] > array[j]){
                     min = j;
-                    count++;
                 }
             }
 
@@ -21,7 +19,6 @@ public class A_SelectionSort {
             array[min] = array[i];
             array[i] = temp;
         }
-        System.out.println("선택정렬 시행횟수: "+count);
     }
 
 
