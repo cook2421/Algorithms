@@ -1,5 +1,9 @@
 package Sort;
 
+import Sort.Simple_Slow.A_SelectionSort;
+import Sort.Simple_Slow.B_InsertionSort;
+import Sort.Simple_Slow.C_BubbleSort;
+
 public class Client {
     public static void main(String[] args) {
 
@@ -21,13 +25,13 @@ public class Client {
         }
 
 
-        BubbleSort b = new BubbleSort();
+        C_BubbleSort b = new C_BubbleSort();
         b.bubbleSort(array_b);
 
-        SelectionSort s = new SelectionSort();
+        A_SelectionSort s = new A_SelectionSort();
         s.selectionSort(array_s);
 
-        InsertionSort i = new InsertionSort();
+        B_InsertionSort i = new B_InsertionSort();
         i.insertionSort(array_i);
     }
 }
