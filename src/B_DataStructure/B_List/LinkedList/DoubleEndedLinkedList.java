@@ -1,5 +1,8 @@
 package B_DataStructure.B_List.LinkedList;
 
+/**
+* 이중 말단 연결 리스트
+* */
 public class DoubleEndedLinkedList {
 
     private class Header {

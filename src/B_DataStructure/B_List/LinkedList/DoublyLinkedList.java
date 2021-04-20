@@ -1,5 +1,8 @@
 package B_DataStructure.B_List.LinkedList;
 
+/**
+* 이중 연결 리스트
+* */
 public class DoublyLinkedList {
 
     private class Node{
