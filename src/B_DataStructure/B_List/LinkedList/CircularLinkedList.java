@@ -196,6 +196,43 @@ public class CircularLinkedList {
         headNode.link = current;
         head = current;
     }
+}
 
 
+class Main{
+    public static void main(String[] args) {
+        CircularLinkedList list = new CircularLinkedList();
+
+        // FirstNodeInsert Test
+        list.FirstNodeInsert("목");
+        list.FirstNodeInsert("화");
+        list.FirstNodeInsert("월");
+        list.printList();
+
+        // MiddleNodeInsert Test
+        Node pre = list.searchNode("수");
+        list.middleNodeInsert("존재하지도 않는 노드", pre);
+        pre = list.searchNode("화");
+        list.middleNodeInsert("수", pre);
+        pre = list.searchNode("목");
+        list.middleNodeInsert("토", pre);
+        list.middleNodeInsert("금", pre);
+        list.printList();
+
+        // Node Delete Test
+        Node delNode = list.searchNode("일");
+        list.deleteNode(delNode);
+        delNode = list.searchNode("월");
+        list.deleteNode(delNode);
+        delNode = list.searchNode("수");
+        list.deleteNode(delNode);
+        delNode = list.searchNode("토");
+        list.deleteNode(delNode);
+        list.printList();
+
+        // Node Reverse Test
+        System.out.println("**Reverse List**");
+        list.reverseList();
+        list.printList();
+    }
 }
