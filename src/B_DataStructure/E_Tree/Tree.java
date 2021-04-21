@@ -1,12 +1,12 @@
 package B_DataStructure.E_Tree;
 
-class Node {
-    int data;
-    Node left;
-    Node right;
-}
-
 class Tree {
+    class Node {
+        int data;
+        Node left;
+        Node right;
+    }
+
     public Node root;
 
     public void setRoot(Node node){
@@ -55,18 +55,22 @@ class Tree {
             System.out.println(node.data);
         }
     }
-}
 
-class Main {
-    public static void main(String[] args) {
-        Tree t = new Tree();
-        Node n5 = t.createNode(null, 5, null);
-        Node n4 = t.createNode(null, 4, null);
-        Node n3 = t.createNode(null, 3, null);
-        Node n2 = t.createNode(n4, 2, n5);
-        Node n1 = t.createNode(n2, 1, n3);
 
-        t.setRoot(n1);
-        t.postOrder(t.getRoot());
+
+    static class Main {
+        public static void main(String[] args) {
+            Tree t = new Tree();
+            Node n5 = t.createNode(null, 5, null);
+            Node n4 = t.createNode(null, 4, null);
+            Node n3 = t.createNode(null, 3, null);
+            Node n2 = t.createNode(n4, 2, n5);
+            Node n1 = t.createNode(n2, 1, n3);
+
+            t.setRoot(n1);
+            t.postOrder(t.getRoot());
+        }
     }
 }
+
+
