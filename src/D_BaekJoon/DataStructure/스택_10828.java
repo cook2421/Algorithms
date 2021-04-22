@@ -47,7 +47,7 @@ public class 스택_10828 {
 
 
     static class Node {
-        Integer value;
+        int value;
         Node nextNode;
 
         public Node(int item){

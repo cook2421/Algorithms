@@ -15,13 +15,17 @@ public class 괄호_9012 {
         for(int i=0; i<loop; i++){
             st = new StringTokenizer(br.readLine());
             String[] arrStr = st.nextToken().split("");
+
             int isVps = 0;
-            for(String s : arrStr){
-                switch (s){
-                    case "(" : isVps--; break;
-                    case ")" : isVps++; break;
+
+            for(String str : arrStr){
+                if(isVps < 0) break;
+                switch (str){
+                    case "(" : isVps++; break;
+                    case ")" : isVps--; break;
                 }
             }
+
             if(isVps == 0){
                 System.out.println("YES");
             } else {
@@ -30,11 +34,3 @@ public class 괄호_9012 {
         }
     }
 }
-
-
-/*
-
-))((
-위 케이스 해결!!
-
-*/
