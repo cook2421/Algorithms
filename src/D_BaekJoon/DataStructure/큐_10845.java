@@ -11,7 +11,7 @@ public class 큐_10845 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int loop = Integer.parseInt(st.nextToken());
-        Queue que = new Queue();
+        Queue_10845 que = new Queue_10845();
 
         for(int i=0; i<loop; i++){
             st = new StringTokenizer(br.readLine());
@@ -34,7 +34,7 @@ public class 큐_10845 {
 }
 
 
-class Queue {
+class Queue_10845 {
     class Node {
         private int value;
         private Node nextNode;
@@ -49,7 +49,7 @@ class Queue {
     private Node rear;
     private int size;
 
-    public Queue(){
+    public Queue_10845(){
         this.front = null;
         this.rear = null;
         size = 0;
