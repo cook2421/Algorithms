@@ -13,23 +13,32 @@ public class 큐_10845 {
         int loop = Integer.parseInt(st.nextToken());
         Queue_10845 que = new Queue_10845();
 
+        StringBuilder sb = new StringBuilder();
+
         for(int i=0; i<loop; i++){
             st = new StringTokenizer(br.readLine());
             String input = st.nextToken();
             if(input.equals("push")){
                 que.push(Integer.parseInt(st.nextToken()));
             } else if(input.equals("pop")){
-                System.out.println(que.pop());
+                sb.append(que.pop());
+                sb.append(System.lineSeparator());
             } else if(input.equals("size")){
-                System.out.println(que.size());
+                sb.append(que.size());
+                sb.append(System.lineSeparator());
             } else if(input.equals("empty")){
-                System.out.println(que.empty());
+                sb.append(que.empty());
+                sb.append(System.lineSeparator());
             } else if(input.equals("front")){
-                System.out.println(que.front());
+                sb.append(que.front());
+                sb.append(System.lineSeparator());
             } else if(input.equals("back")){
-                System.out.println(que.back());
+                sb.append(que.back());
+                sb.append(System.lineSeparator());
             }
         }
+
+        System.out.println(sb);
     }
 }
 
