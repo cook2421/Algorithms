@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 탑_2493 {
+//todo 시간 초과!!!
+public class 탑_2493_NOT_SOLVED {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -61,7 +62,7 @@ class LinkedList_2493 {
         if(size == 0 || size == 1) return 0;
 
         CellTower preTower = rear.preTower;
-        while(preTower != null && preTower.height <= rear.height) {
+        while(preTower != null && preTower.height < rear.height) {
             preTower = preTower.preTower;
         }
 
