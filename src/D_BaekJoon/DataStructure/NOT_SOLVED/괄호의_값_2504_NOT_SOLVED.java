@@ -1,4 +1,4 @@
-package D_BaekJoon.DataStructure;
+package D_BaekJoon.DataStructure.NOT_SOLVED;
 
 import jdk.nashorn.internal.runtime.ParserException;
 

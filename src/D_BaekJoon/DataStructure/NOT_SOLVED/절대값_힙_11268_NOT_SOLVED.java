@@ -1,4 +1,4 @@
-package D_BaekJoon.DataStructure;
+package D_BaekJoon.DataStructure.NOT_SOLVED;
 
 import java.io.BufferedReader;
 import java.io.IOException;
