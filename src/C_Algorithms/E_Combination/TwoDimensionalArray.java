@@ -1,4 +1,4 @@
-package C_Algorithms.Combination;
+package C_Algorithms.E_Combination;
 
 /*
 * 2차원 배열에서 조합을 구할 때 사용하는 방법

@@ -1,4 +1,4 @@
-package C_Algorithms.Sort.Simple_Slow;
+package C_Algorithms.A_Sort.Simple_Slow;
 
 public class C_BubbleSort {
 

@@ -1,4 +1,4 @@
-package C_Algorithms.Sort.Fast;
+package C_Algorithms.A_Sort.Fast;
 
 import java.util.Arrays;
 

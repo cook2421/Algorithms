@@ -1,8 +1,8 @@
-package C_Algorithms.Sort;
+package C_Algorithms.A_Sort;
 
-import C_Algorithms.Sort.Simple_Slow.A_SelectionSort;
-import C_Algorithms.Sort.Simple_Slow.B_InsertionSort;
-import C_Algorithms.Sort.Simple_Slow.C_BubbleSort;
+import C_Algorithms.A_Sort.Simple_Slow.A_SelectionSort;
+import C_Algorithms.A_Sort.Simple_Slow.B_InsertionSort;
+import C_Algorithms.A_Sort.Simple_Slow.C_BubbleSort;
 
 public class Client {
     public static void main(String[] args) {

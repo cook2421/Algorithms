@@ -1,4 +1,4 @@
-package C_Algorithms.DFS_BFS;
+package C_Algorithms.B_DFS_BFS;
 
 import java.util.*;
 

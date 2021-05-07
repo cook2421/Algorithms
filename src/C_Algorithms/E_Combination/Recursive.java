@@ -1,4 +1,4 @@
-package C_Algorithms.Combination;
+package C_Algorithms.E_Combination;
 
 /*
 * arr : 조합을 뽑아낼 배열
