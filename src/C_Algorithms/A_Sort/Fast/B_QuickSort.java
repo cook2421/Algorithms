@@ -50,3 +50,16 @@ public class B_QuickSort {
         System.out.println("퀵 정렬 후: "+ Arrays.toString(array));
     }
 }
+
+
+/*
+
+<퀵 정렬>
+
+1. 첫번째 인덱스(Pivot)보다 작은 원소는 왼쪽으로, 큰 원소는 오른쪽으로 보낸다.
+2. 각 왼쪽, 오른쪽에서 다시 1번 시행
+3. 모두 끝난 후 합병
+
+(분할 정복의 한 예시)
+
+*/

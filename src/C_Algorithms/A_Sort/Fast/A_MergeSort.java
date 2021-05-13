@@ -63,3 +63,14 @@ public class A_MergeSort {
         mergeSort(array, 0, length-1);
     }
 }
+
+/*
+
+<합병 정렬>
+
+모든 수를 1개가 될 때까지 절반씩 나누어,
+대소비교하면서 합치는 식으로 정렬.
+
+(분할 정복의 한 예시)
+
+*/

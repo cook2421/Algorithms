@@ -29,3 +29,12 @@ public class C_BubbleSort {
         bubble.bubbleSort(array);
     }*/
 }
+
+/*
+
+<버블 정렬>
+
+인접한 두 숫자의 대소를 비교하여 자리 바꿈.
+(모든 수가 정렬될 때까지 반복)
+
+*/

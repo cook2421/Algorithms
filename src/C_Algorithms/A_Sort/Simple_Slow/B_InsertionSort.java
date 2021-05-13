@@ -29,3 +29,11 @@ public class B_InsertionSort {
         insertion.insertionSort(array);
     }*/
 }
+
+/*
+
+<삽입정렬>
+
+두번째 인덱스부터 자기 앞에 있는 숫자들 사이에 자기 위치 찾아 들어감
+
+*/

@@ -4,11 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class 색종이_만들기_2630_NOT_SOLVED {
+public class 색종이_만들기_2630 {
+
+    static Integer[] sum = {0, 0};
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -24,26 +25,19 @@ public class 색종이_만들기_2630_NOT_SOLVED {
             }
         }
 
-        Queue<int[][]> paperPieces = new LinkedList<>();
-        paperPieces.add(paper);
-        Integer[] sum = {0, 0};
-        getPaperCnt(paperPieces, sum);
+        getPaperCnt(paper);
 
         System.out.println(sum[0]);
         System.out.println(sum[1]);
 
     }
 
-    public static void getPaperCnt(Queue<int[][]> paperPieces, Integer[] sum) {
+    public static void getPaperCnt(int[][] paper) {
 
-        if(paperPieces.isEmpty()) return;
-
-        int[][] paper = paperPieces.poll();
         if(needToSplit(paper)){
             for(int i=1; i<=4; i++){
-                paperPieces.add(getPaperPiece(paper, i));
+                getPaperCnt(getPaperPiece(paper, i));
             }
-            getPaperCnt(paperPieces, sum);
         } else {
             if(paper[0][0] == 0){
                 sum[0]++;

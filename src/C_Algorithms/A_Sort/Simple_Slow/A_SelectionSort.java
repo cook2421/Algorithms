@@ -21,8 +21,6 @@ public class A_SelectionSort {
         }
     }
 
-
-
     /*public static void main(String[] args) {
         int[] array = {6,5,7,4,8,2,9,10,1,3};
 
@@ -31,3 +29,15 @@ public class A_SelectionSort {
         selection.selectionSort(array);
     }*/
 }
+
+
+
+/*
+
+<선택정렬>
+
+인덱스 순으로 자기 뒤에 있는 값중 최소값과 자리바꿈
+(마지막 인덱스는 시행하지 않아도 정렬됨)
+
+*/
+
