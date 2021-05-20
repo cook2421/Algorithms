@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class 재귀함수가_뭔가요_17478 {
 
-    static String indentation = "----";
+    static String indentation = "____";
 
     static String first = "\"재귀함수가 뭔가요?\"";
     static String second = "\"잘 들어보게. 옛날옛날 한 산 꼭대기에 이세상 모든 지식을 통달한 선인이 있었어.";
@@ -31,7 +31,7 @@ public class 재귀함수가_뭔가요_17478 {
             sb = makeStory(depth, sb, false);
             sb = tellingStory(loop, ++depth, sb);
             sb = indent(--depth, sb);
-            sb.append(sixth); sb.append("\n");
+            sb.append(sixth); if(depth != 0)sb.append("\n");
         }
         return sb;
     }
