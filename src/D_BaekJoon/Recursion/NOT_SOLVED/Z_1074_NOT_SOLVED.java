@@ -1,4 +1,4 @@
-package D_BaekJoon.Recursion;
+package D_BaekJoon.Recursion.NOT_SOLVED;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Z_1074_NOT_SOLVED {
     }
 
     public static int findOrder(int order, int size, int h_from, int h_to, int v_from, int v_to){
-        int quadSize = size == 2 ? 1 : (int)Math.pow(2, size/2);
+        int quadSize = size == 2 ? 1 : size*size/4;
         int nextSize = size/2;
 
         if(size > 1) {
